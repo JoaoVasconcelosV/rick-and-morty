@@ -26,3 +26,10 @@
   color: white;
   font-size: 30px;
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .modal{
+    margin: 20px auto 0px auto;
+    height: 600px;
+  }
+}

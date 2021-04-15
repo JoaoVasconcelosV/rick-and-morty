@@ -47,3 +47,14 @@ p{
     width: 80%;
   }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .titles{
+    font-size: 20px;
+  }
+
+  .modal-content img {
+    height: 300px;
+    width: 300px;
+  }
+}
