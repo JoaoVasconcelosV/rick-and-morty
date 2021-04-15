@@ -1,6 +1,28 @@
-.modal {
+.modal{
   color: white;
-  height: 400px;
-  width: 300px;
-  background-color: red;
+  background-color:rgba(45, 45, 45, 0.8);
+  border-radius: 9px;
+  max-width: 727px;
+  height: 800px;
+  margin: 80px auto 0 auto;
+  padding: 15px;
+}
+
+.modal-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.modal button{
+  position: absolute;
+  float: right;
+  border-radius: 9px;
+  outline: none;
+  background-color: unset;
+  color: white;
+  font-size: 30px;
 }

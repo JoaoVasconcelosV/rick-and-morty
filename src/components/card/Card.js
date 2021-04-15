@@ -3,7 +3,7 @@ import './card.css'
 
 const Card = (props) => {
   return (
-    <div className='card'>
+    <div className='card' onClick={props.onClickID}>
       <div>
         <span>{props.name || 'Name' }</span>
         <img src={props.img} alt="Rick"/>

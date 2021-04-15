@@ -1,19 +1,22 @@
-import React, { useState } from 'react'
+import React from 'react'
+import ReactDOM from 'react-dom'
 import './modal.css'
 
-const Modal = () => {
-  const [visible, setVisible] = useState(true)
+const portal = document.getElementById('modal')
 
-  const closeModal = () => {setVisible(false)}
-
-  if(!visible)
+const Modal = ({children, isOpen, clickClose}) => {
+  if(!isOpen){
     return null
+  }
 
-  return (
-    <div>
-      Modal
-      <button onClick={closeModal}>Fechar modal</button>
-    </div>
+  return ReactDOM.createPortal(
+    <div className='modal-overlay'>
+      <div className='modal'> 
+        <button type='button' onClick={clickClose}>X</button>
+        {children}  
+      </div>
+    </div>,
+    portal
   )
 }
 
