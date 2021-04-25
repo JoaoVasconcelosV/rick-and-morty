@@ -50,3 +50,22 @@
 .header div div img{
   margin: 0 7px;
 }
+
+.header div button {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .header ul {
+    display: none !important;
+  }
+
+  .header div div{
+    display: none !important;
+  }
+  .header div button {
+    display: inline;
+    height: 30px;
+    width: 30px;
+  } 
+}

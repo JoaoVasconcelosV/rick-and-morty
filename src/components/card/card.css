@@ -3,15 +3,32 @@
   width: 141px;
   color: var(--text-color);
   display: flex;
+  align-items: center;
   flex-direction: column;
-  margin: 0px 142px 30px;
-  cursor: pointer
+  margin: 0px 120px 30px;
+  cursor: pointer;
+  width: 170px;
+
+  transition: 0.2s;
+}
+
+.card:hover {
+  background-color: var(--cards-color);
+  border-radius: 10px;  
 }
 
 .card img {
   height: 141px;
+  max-width: 140px;
   bottom: 0;
-  border-radius: 10px;
+  border-radius: 10px;  
+}
+
+.card div span {
+  max-width: 20ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .card div {

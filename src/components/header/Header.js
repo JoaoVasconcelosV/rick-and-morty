@@ -22,6 +22,7 @@ const Header =  () => {
           <a href='https://www.instagram.com/joao_11vasconcelos' target='_blank' rel="noreferrer"><img src={Instagram} alt="Instagram"/></a>
           <a href='https://github.com/JoaoVasconcelosV' target='_blank' rel="noreferrer"><img src={Github} alt="Github"/></a>
         </div>
+        <button>+</button>
       </div>
     </header>
   )

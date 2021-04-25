@@ -8,7 +8,7 @@ const Card = (props) => {
         <span>{props.name || 'Name' }</span>
         <img src={props.img} alt="Rick"/>
       </div>
-      <span>More</span>
+      <span>Click me</span>
     </div>
   )
 }
