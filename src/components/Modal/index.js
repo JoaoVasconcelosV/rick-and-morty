@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './modal.css'
+import './style.css'
 
 const portal = document.getElementById('modal')
 

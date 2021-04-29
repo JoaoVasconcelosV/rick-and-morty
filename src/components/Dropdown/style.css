@@ -1,0 +1,30 @@
+.dropdown {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 100vw;
+  top: 0;
+  margin-top:60px;
+  background-color: #090909;
+}
+
+.dropdown a {
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.dropdown a:hover {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+.dropdown a:active {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+.none {
+  display: none;
+}

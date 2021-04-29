@@ -1,6 +1,7 @@
-import Header from './header/Header'
-import Layout from './layout/Layout'
-import Card from './card/Card'
-import Modal from './modal/Modal'
+import Header from './Header/'
+import Layout from './Layout'
+import Card from './Card/'
+import Modal from './Modal/'
+import Dropdown from './Dropdown'
 
-export { Header, Layout, Card, Modal }
+export { Header, Layout, Card, Modal, Dropdown }

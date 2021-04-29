@@ -5,3 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
+
+button {
+  cursor: pointer;
+}

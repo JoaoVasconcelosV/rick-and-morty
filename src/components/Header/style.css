@@ -64,8 +64,8 @@
     display: none !important;
   }
   .header div button {
-    display: inline;
-    height: 30px;
-    width: 30px;
+    display: block;
+    background-color: transparent;
+    border: none;
   } 
 }
