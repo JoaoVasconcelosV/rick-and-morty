@@ -7,13 +7,12 @@
   flex-direction: column;
   margin: 0px 120px 30px;
   cursor: pointer;
-  width: 170px;
 
   transition: 0.2s;
 }
 
 .card:hover {
-  background-color: var(--cards-color);
+  transform: scale(1.2);
   border-radius: 10px;  
 }
 
