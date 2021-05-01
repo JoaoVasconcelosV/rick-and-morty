@@ -1,18 +1,40 @@
+@keyframes down {
+  from {
+    transform: translate(0, -100%)
+  }
+  to {
+    transform: translate(0, 0)
+  }
+}
+
 .dropdown {
   position: fixed;
   display: flex;
   flex-direction: column;
   font-size: 20px;
+  height: 100vh;
   width: 100vw;
   top: 0;
   margin-top:60px;
   background-color: #090909;
+  z-index: 2;
+
+  animation: down .6s;
+}
+
+.dropdown hr {
+  width: 100vw;
 }
 
 .dropdown a {
-  padding: 5px;
+  padding: 30px;
+  font-size: 30px;
   text-decoration: none;
   color: #fff;
+}
+
+.dropdown a img {
+  width: 40px
 }
 
 .dropdown a:hover {

@@ -1,3 +1,14 @@
+@keyframes reveal {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .modal{
   color: white;
   background-color:rgba(45, 45, 45, 0.8);
@@ -5,7 +16,8 @@
   max-width: 727px;
   height: 800px;
   margin: 80px auto 0 auto;
-  padding: 15px;
+  padding: 15px;  
+  animation: reveal .6s;  
 }
 
 .modal-overlay{

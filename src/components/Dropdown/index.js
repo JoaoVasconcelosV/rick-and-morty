@@ -10,8 +10,11 @@ const Dropdown = ({isOpen}) => {
   return(
     <div className={isOpen ? 'dropdown' : 'none'}>
       <Link to="/">Characters</Link>
+      <hr/>
       <Link to="/locations">Locations</Link>
+      <hr/>
       <Link to="/episodes">Episodes</Link>
+      <hr/>
       <div>
         <a href="https://www.linkedin.com/in/joao-vasconcelos11/" target='_blank' rel="noreferrer">
           <img width="30" src={Linkedin} alt="Linkedin"/>

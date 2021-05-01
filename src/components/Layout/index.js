@@ -7,7 +7,11 @@ const Layout = (props) => {
   const[isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
-    setIsOpen(!isOpen)
+    setIsOpen(!isOpen)    
+  }
+
+  if(!isOpen) {
+    
   }
 
   useEffect(() => {
