@@ -12,5 +12,6 @@ const Card = (props) => {
     </div>
   )
 }
+//TESTE
 
 export default Card
