@@ -31,7 +31,7 @@ const Layout = (props) => {
       <Dropdown isOpen={isOpen}/>
       <UserContext.Consumer>
         {({ user }) => (
-          <h2>{user && user.name} visualizou {Object.keys(user.visualizedCharacters).length} personagens</h2>           
+          <h2>{user && user.name} have viewed {Object.keys(user.visualizedCharacters).length} characters</h2>           
         )}
       </UserContext.Consumer>
       <h1>Rick and Morty</h1>

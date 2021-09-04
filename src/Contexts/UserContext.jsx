@@ -6,7 +6,7 @@ const UserContext = createContext({
 });
 
 const defaultUser = {
-  name: "Você",
+  name: "You",
   visualizedCharacters: {}
 };
 
