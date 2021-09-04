@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect, useContext } from 'react'
 import ReactDOM from 'react-dom'
+import { UserContext } from '../../Contexts/UserContext'
 import './style.css'
 
 const portal = document.getElementById('modal')
 
-const Modal = ({children, isOpen, clickClose}) => {
+const Modal = ({character, children, isOpen, clickClose}) => {
+  const { setVisualizedCharacters } = useContext(UserContext);
+
+  useEffect(() => {
+    setVisualizedCharacters(character)
+  }, [character, setVisualizedCharacters]);
+
   if(!isOpen){
     return null
   }

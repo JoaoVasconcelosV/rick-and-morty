@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { UserContext } from '../../Contexts/UserContext';
 import './style.css'
 
 import { Header, Dropdown } from '../index'
@@ -27,7 +28,12 @@ const Layout = (props) => {
   return (
     <div className='layout'>         
       <Header toggle={toggle}/>
-      <Dropdown isOpen={isOpen}/>            
+      <Dropdown isOpen={isOpen}/>
+      <UserContext.Consumer>
+        {({ user }) => (
+          <h2>{user && user.name} visualizou {Object.keys(user.visualizedCharacters).length} personagens</h2>           
+        )}
+      </UserContext.Consumer>
       <h1>Rick and Morty</h1>
       <div className='content'>
         <h1>{props.title}</h1>
